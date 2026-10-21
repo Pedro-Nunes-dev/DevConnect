@@ -520,6 +520,7 @@ section.cards {
     /* background-color: red; */
     min-height: 90vh;
     min-height: 90svh;
+
     span {
         background-image: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
         background-clip: text;
@@ -565,14 +566,19 @@ section.cards {
     line-height: 1.6;
 }
 
-.categoria-curso {
-    width: fit-content;
+span.categoria-curso {
     padding: 6px 12px;
     border-radius: 20px;
-    background: #ffe0e8;
-    color: #FC466B;
     font-size: 0.75rem;
     font-weight: 700;
+
+
+    background-image: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
 }
 
 .detalhes-curso {
@@ -601,7 +607,7 @@ section.cards {
         margin-inline: 0;
     }
 
-    .cards .row > [class*="col-"] {
+    .cards .row>[class*="col-"] {
         flex: 0 0 90%;
         max-width: 24rem;
     }
