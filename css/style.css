@@ -34,7 +34,10 @@ ul {
 }
 
 .navbar-expand-lg {
-    background: rgba(255, 255, 255, 0.28);
+    margin-top: 1%;
+    width: 80%;
+    margin-left: 10%;
+    background: rgba(255, 255, 255, 0.514);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -84,7 +87,7 @@ ul {
 }
 
 .navbar-nav .nav-link {
-    color: #2b2828;
+    color: #161616;
     transition: all 0.3s;
 }
 
@@ -413,7 +416,22 @@ footer {
     }
 
     .carousel-caption {
+        position: static;
+        display: block;
+        color: #2b2828;
         padding: 0.5rem;
+        background: #fff;
+    }
+
+    .carousel-caption h5 {
+        margin-bottom: 0.25rem;
+        font-size: 0.95rem;
+    }
+
+    .carousel-caption p {
+        margin-bottom: 0;
+        font-size: 0.8rem;
+        line-height: 1.4;
     }
 
     .form {
@@ -494,5 +512,97 @@ footer {
     .formulario label,
     .formulario .form-control {
         width: 88%;
+    }
+}
+
+
+section.cards {
+    /* background-color: red; */
+    min-height: 90vh;
+    min-height: 90svh;
+    span {
+        background-image: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+
+}
+
+
+.card-curso {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-curso:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card-curso .card-img-top {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+}
+
+.card-curso .card-body {
+    padding: 25px;
+}
+
+.card-curso .card-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.card-curso .card-text {
+    color: #666;
+    line-height: 1.6;
+}
+
+.categoria-curso {
+    width: fit-content;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: #ffe0e8;
+    color: #FC466B;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.detalhes-curso {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.btn-curso {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #FC466B, #3F5EFB);
+    color: white;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+}
+
+.btn-curso:hover {
+    opacity: 0.85;
+    color: white;
+}
+
+@media (max-width: 767.98px) {
+    .cards .row {
+        justify-content: center;
+        margin-inline: 0;
+    }
+
+    .cards .row > [class*="col-"] {
+        flex: 0 0 90%;
+        max-width: 24rem;
     }
 }
